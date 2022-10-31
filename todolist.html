@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../class asignment/class assignment/bootstrap files/bootstrap4/css/bootstrap.min.css">
+    <title>To DO List</title>
+</head>
+
+<body>
+    <header class="bg-primary text-success pb-4">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <!-- <font face="Comic sans Ms" size="11" color="black">
+                    
+                <strong>To Do List</strong>
+            </font> -->
+            <h1 class="text-danger" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 50px;">
+                <strong>To Do List</strong>
+            </h1>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-3">
+        <h2 class="text-danger">Add Item</h2>
+
+        <label for="1b1success" class="text-success" style="display: none;" >
+        </label>
+
+    <form id="addForm">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <input type="text" onkeyup="toggleButton(this, 'submit' )" class="form-control" id="item">
+            </div>
+        <div class="col-lg-5 col-md-5 col-md-5">
+            <input type="submit" class="btn btn success" id="submit" value="Submit" disabled>
+        </div>
+       </div>
+   </form>
+   <h3 class="mt-4 font-weight-bolder">Tasks</h3>
+   <form id="addForm">
+       <ul class="list-group" id="items"></ul>
+   </form> 
+    </div><hr>
+
+
+
+
+
+    <link rel="stylesheet" href="../class asignment/class assignment/bootstrap files/bootstrap4/js/jquery-3.6.0.min.js">
+    <link rel="stylesheet" href="../class asignment/class assignment/bootstrap files/bootstrap4/js/popper.min.js">
+    <link rel="stylesheet" href="../class asignment/class assignment/bootstrap files/bootstrap4/js/bootstrap.min.js">
+    <script src="todolist.js"></script>
+</body>
+</html>
